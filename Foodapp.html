@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="https://littleroomofbeauty.com.au/wp-content/uploads/2016/08/Chef-Icon-2.png" type="image/png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodzieee</title>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            background-color: #edfdfb;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main-div {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ff2f4a;
+            color: whitesmoke;
+            box-shadow: 0 0 10px black;
+            height: 90px;
+            width: 100%;
+            align-items: center;
+        }
+        .right {
+            margin-left: 30px;
+        }
+        .right-rt p{
+            margin: 0;
+            padding: 0;
+        }
+        .left {
+            display: flex;
+            align-items: center;
+        }
+        .left-lt {
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+        }
+        .left-lt:hover {
+            color: black;
+            cursor: pointer;
+            height: 90px;
+            display: flex;
+            align-items: center;
+        }
+        .right:hover {
+            color: black;
+            cursor: pointer;
+            height: 90px;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            font-size: 30px;
+            margin: 0 auto 0 auto;
+        }
+        .dp {
+            width: 50px;
+            border-radius: 50%;
+            padding-left: 5px;
+        }
+        .food-list {
+            display: inline-block;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .food-list li,.restaurant li {
+            color: black;
+            list-style-type: circle;
+        }
+        .food-img {
+            height: 300px;
+        }
+        .food-box {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .restaurant {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 30px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .food-card-r {
+            background-color: #b9bab8;
+            padding: 5px 120px;
+        }
+        .food-heading {
+            font-size: 24px;
+        }
+        .food-card {
+            box-shadow: 0 0 10px black;
+            margin: 20px;
+            background-color: #b9bab8;
+            padding: 30px;
+            border-radius: 10px;
+            /* width: 33.3%; */
+        }
+        .food-card h3 {
+            margin: 0;
+            padding-top: 5px;
+        }
+        .food-card p {
+            margin: 0;
+            padding: 5px;
+        }
+        .btn {
+            background-color: #ff2f4a;
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+        .btn:hover {
+            background-color: #04030f;
+            color: whitesmoke;
+            cursor: pointer;
+        }
+        .food-card:hover {
+            background-color: #808080;
+            cursor: pointer;
+        }
+        .offer {
+            font-style: italic;
+        }
+        .footr {
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 0 5px black;
+            background-color: #04030f;
+            color: whitesmoke;
+            line-height: 1.5;
+            position: relative;
+            padding: 10px 0 20px 0;
+        }
+        .footr h3 {
+            padding: 0;
+            margin: 0;
+        }
+        .price {
+            display: flex;
+            justify-content: space-between;
+        }
+        .food-card-main {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footr ul {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .social {
+            margin-top: 15px;
+        }
+        .s-icon {
+            padding: 5px;
+            color: rgba(245, 245, 245, 0.8);
+        }
+        .cr {
+            display: block;
+            position: absolute;
+            bottom: 0;
+        }
+        .cr a {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-div" id="top">
+        <div class="right" title="Home">
+            <div class="right-rt">
+            <h1> Foodzieee </h1>
+            <p>Food at your door step</p>    
+            </div>
+        </div>
+        <div class="left">
+
+            <div class="left-lt" title="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="left-lt" title="Maps">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="left-lt" title="Notification">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="left-lt" title="Profile">
+               <p>  Anas Ahmed </p>
+
+                <img src="https://i.pinimg.com/564x/ff/5a/44/ff5a447ae422e734b380c8a63e5effd6.jpg" alt="Profile Photo" class="dp">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="food-list">
+            <ul>
+                <h3>Top 5 Favorite Food:</h3>
+                <a href="#pizza"><li> Pizza </li></a>
+                <a href="#burger"><li> Burger </li></a>
+                <a href="#cake"><li> Cake </li></a>
+                <a href="#oreo"><li> Oreo Shakes </li></a>
+                <a href="#mozzarella"><li> Mozzarella Sticks </li></a>
+            </ul>
+        </div>
+
+        <div class="food-box">
+            <div class="food-card-r" id="pizza">
+                <h3 class="food-heading" id="pizza-h">Pizza House</h3>
+                <div class="food-card-main">
+                    <div class="food-card">
+                        <img class="food-img" src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg" alt="Pizza">
+                        <div class="price">
+                            <h3>Pizza</h3>
+                            <p> <del>$7.99</del> $5.99</p>
+                        </div>
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="food-card">
+                        <img class="food-img" src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg" alt="Pizza">
+                        <div class="price">
+                            <h3>Pizza</h3>
+                            <p> <del>$7.99</del> $5.99</p>
+                        </div>
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card-r" id="burger">
+                <h3 class="food-heading" id="poppey-b">Poppey's Burger</h3>
+                <div class="food-card-main">
+                    <div class="food-card">
+                        <img class="food-img" src="https://www.thespruceeats.com/thmb/l4w6PvMqsz1EjueCAh_foPmYafM=/3456x3456/smart/filters:no_upscale()/garlic-burger-patties-333503-hero-01-e4df660ff27b4e5194fdff6d703a4f83.jpg" alt="Burger">
+                        <div class="price">
+                            <h3>Burger</h3>
+                            <p><del>$7.99</del> $5.99</p>
+                        </div>    
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="food-card">
+                        <img class="food-img" src="https://www.thespruceeats.com/thmb/l4w6PvMqsz1EjueCAh_foPmYafM=/3456x3456/smart/filters:no_upscale()/garlic-burger-patties-333503-hero-01-e4df660ff27b4e5194fdff6d703a4f83.jpg" alt="Burger">
+                        <div class="price">
+                            <h3>Burger</h3>
+                            <p><del>$7.99</del> $5.99</p>
+                        </div>    
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card-r" id="cake">
+                <h3 class="food-heading" id="forever">Forever Cakes</h3>
+                <div class="food-card-main">
+                    <div class="food-card">
+                        <img class="food-img" src="https://cdn.shopify.com/s/files/1/0362/1653/articles/Birthday_Cake_Square_5_1600x.jpg?v=1566642810" alt="Cake">
+                        <div class="price">
+                            <h3>Cake</h3>
+                            <p> <del>$7.99</del> $5.99</p>
+                        </div>
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="food-card">
+                        <img class="food-img" src="https://cdn.shopify.com/s/files/1/0362/1653/articles/Birthday_Cake_Square_5_1600x.jpg?v=1566642810" alt="Cake">
+                        <div class="price">
+                            <h3>Cake</h3>
+                            <p> <del>$7.99</del> $5.99</p>
+                        </div>
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card-r" id="oreo">
+                <h3 class="food-heading" id="smths">Smoothies</h3>
+                <div class="food-card-main">
+                    <div class="food-card">
+                        <img class="food-img" src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Oreo-Milkshake-2-3.jpg" alt="Oreo Shake">
+                        <div class="price">
+                            <h3>Oreo Shake</h3>
+                            <p> <del>$7.99</del> $5.99</p>
+                        </div>
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="food-card">
+                        <img class="food-img" src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Oreo-Milkshake-2-3.jpg" alt="Oreo Shake">
+                        <div class="price">
+                            <h3>Oreo Shake</h3>
+                            <p> <del>$7.99</del> $5.99</p>
+                        </div>
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card-r" id="mozzarella">
+                <h3 class="food-heading" id="yolo">YOLO Cafe</h3>
+                <div class="food-card-main">
+                    <div class="food-card">
+                        <img class="food-img" src="https://sugarspunrun.com/wp-content/uploads/2021/07/Homemade-Mozzarella-Sticks-Recipe-1-of-1.jpg" alt="Mozzarella">
+                        <div class="price">
+                            <h3>Mozzarella Sticks</h3>
+                            <p> <del>$7.99</del> $5.99</p>
+                        </div>
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="food-card">
+                        <img class="food-img" src="https://sugarspunrun.com/wp-content/uploads/2021/07/Homemade-Mozzarella-Sticks-Recipe-1-of-1.jpg" alt="Mozzarella">
+                        <div class="price">
+                            <h3>Mozzarella Sticks</h3>
+                            <p> <del>$7.99</del> $5.99</p>
+                        </div>
+                        <p class="offer">Buy one get one free</p>
+                        <button class="btn">Order Now <i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <div class="restaurant">
+            <ul>
+                <h3>Best Restaurant:</h3>
+                <a href="#pizza-h"> <li> Pizza House </li> </a>
+                <a href="#poppey-b"> <li> Poppey's Burger </li> </a>
+                <a href="#forever"> <li> Forever Cakes </li> </a>
+                <a href="#smths"> <li> Smoothies </li> </a>
+                <a href="#yolo"> <li> YOLO Cafe </li> </a>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footr">
+        <div>
+            <ul>
+                <h3>Company</h3>
+                <li>About Us</li>
+                <li>Career</li>
+                <li>Team</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <h3>Contact</h3>
+                <li><i class="fa-solid fa-envelope"></i> - <a href="mailto:anas31197@gmail.com">anas31197@gmail.com</a> </li>
+                <li><i class="fa-solid fa-phone"></i> - <a href="tel:+918251039590">+918251039590</a> </li>
+                <li>Partner with us</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <h3>Learn More</h3>
+                <li>Privacy</li>
+                <li>Security</li>
+                <li>Terms</li>
+            </ul>
+        </div>
+
+        <div  class="social">
+            <h3>Social Media</h3>
+            <div>
+                <a class="s-icon" href="https://twitter.com/a_14_a_19" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                
+                <a class="s-icon" href="https://www.linkedin.com/in/anas-ahmed-3b927913a/" target="_blank">  
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+    
+                <a class="s-icon" href="https://in.pinterest.com/a14_a19/_saved/" target="_blank">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+    
+                <a class="s-icon" href="https://github.com/a14a19" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="cr"> <a href="#top"> &COPY;2022, Anas Ahmed </a></div>
+    </footer>    
+</body>
+</html>
